@@ -1,0 +1,29 @@
+    1  cd /etc/yum.repos.d/
+    2  ll
+    3  cat localftp.repo 
+    4  vim localftp.repo 
+    5  yum repolist
+    6  mv redhat.repo /root
+    7  yum list
+    8  dnf install -y vsftpd libvirt virt-manager 
+    9  cd /var/lib/libvirt/images/
+   10  ll
+   11  ll-lh
+   12  ll -lh
+   13  useradd -G wheel ocpadmin
+   14  passwd ocpadmin
+   15  id ocpadmin
+   16  vim /etc/vsftpd/vsftpd.conf 
+   17  systemctl enable --now vsftpd
+   18  hostnamectl 
+   19  systemctl enable --now libvirt
+   20  systemctl enable --now libvirtd
+   21  ping 192.168.122.180
+   22  cd /home/ocpadmin/Downloads/
+   23  ls
+   24  mount -o loop ./rhel-9.6-x86_64-dvd.iso /mnt
+   25  cd /mnt
+   26  mkdir /var/ftp/pub/rhel9
+   27  cp -rvf * /var/ftp/pub/rhel9/
+   28  exit
+   29  history >/home/ocpadmin/roothist1.txt

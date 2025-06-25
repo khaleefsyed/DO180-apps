@@ -1,0 +1,26 @@
+    1  sudo vim /etc/yum.repos.d/localftp.repo 
+    2  sudo dnf repolist
+    3  sudo dnf list
+    4  exit
+    5  su - root
+    6  exit
+    7  vim /etc/yum.repos.d/localftp.repo 
+    8  sudo dnf repolist
+    9  sudo dnf list
+   10  exit
+   11  sudo nmtui
+   12  sudo reboot
+   13  sudo restart
+   14  hostnamectl 
+   15  sudo systemctl enable --now cockpit.socket 
+   16  suod visudo
+   17  sudo visudo
+   18  exit
+   19  sudo visudo
+   20  sudo fdisk -l
+   21  fdisk -l
+   22  exit
+   23  history > Day2activvvvvity.txt
+   24  su - root
+   25  history
+   26  history > Day2activity.txt
